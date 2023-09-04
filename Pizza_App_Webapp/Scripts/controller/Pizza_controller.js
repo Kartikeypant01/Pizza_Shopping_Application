@@ -34,7 +34,7 @@ function printBasket(){
         return acc + +pizza.price;
     },0);
     const h2=document.createElement("h2");
-    h2.innerText=`Total Amount $${total}`;
+    h2.innerText=`Total Amount ${total}`;
     basketDiv.appendChild(h2);
 
     }

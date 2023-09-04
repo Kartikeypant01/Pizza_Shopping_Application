@@ -8,6 +8,7 @@ var options = {
     "image": "https://example.com/your_logo",
 
     "callback_url": "https://eneqd3r9zrjok.x.pipedream.net/",
+   
     "prefill": { //We recommend using the prefill parameter to auto-fill customer's contact information especially their phone number
         "name": "Gaurav Kumar", //your customer's name
         "email": "gaurav.kumar@example.com",
@@ -20,6 +21,9 @@ var options = {
         "color": "#3399cc"
     }
 };
+function onPay(){
+    alert("payment sucessfull");
+}
 var rzp1 = new Razorpay(options);
 document.getElementById('rzp-button1').onclick = function(e){
     rzp1.open();
